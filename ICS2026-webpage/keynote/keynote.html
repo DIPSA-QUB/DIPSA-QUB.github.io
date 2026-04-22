@@ -246,13 +246,17 @@ The order in which they are presented below is not necessarily the order in whic
 
 <h2 id="keynote-1">Keynote 1</h2>
 
-<p><strong>Title:</strong> TBA</p>
+<p><strong>Title:</strong> An Open-Source-First Approach: Multi-Level Compiler Design for AI and HPC</p>
 
 <p><strong>Speaker:</strong> Dr Tobias Grosser, Associate Professor in Compiler Design, University of Cambridge</p>
 
-<p><strong>Abstract:</strong> TBA</p>
+<p><img src="TobiasGrosser.png" width="20%" /></p>
 
-<p><strong>Bio:</strong> TBA</p>
+<p><strong>Abstract:</strong> 
+Writing compilers yourself (or understanding them in great detail) has become mission-critical for performance engineers in HPC and AI. HPC engineers still rely on high-performance C++ or Fortran compilers, OpenMP and MPI, and CUDA to program their applications. Yet, highly specialized hardware accelerators from Tenstorrent, Cerebras, and Nextsilicon, as well as higher-level programming models from NVIDIA, have widened the programming surface one needs to master to attain peak performance. While a plethora of new programming models are used to increase accessibility, designing a custom domain-specific compiler stack is surprisingly often an impactful option. In the following talk, I share my experience building multi-level compilers, from HPC to AI, within the MLIR ecosystem, covering MLIR’s GPU dialect and its use for scientific computing, MLIR’s first-class MPI support, our work on targeting Cerbera’s Waverscale engine, and our most recent effort of opening the LLVM backend at the ISA-level using MLIR – often using Python to accelerate development. I then discuss how our <code class="language-plaintext highlighter-rouge">open-source-first</code> research approach enabled us to deliver practically informed research that scales to real workloads, while contributing ideas and code back to the wider open-source ecosystem and helping to make compiler design a powerful tool for HPC and beyond.</p>
+
+<p><strong>Bio:</strong>
+Tobias Grosser is an Associate Professor at the University of Cambridge. Before, he worked as a Reader at the University of Cambridge, as an Ambizione Fellow at ETH Zurich, and as a Google PhD Fellow at INRIA/Paris IV/ENS Paris. Tobias and his research group have a decade-long history of contributing to the LLVM ecosystem. Tobias developed polyhedral loop optimizations in LLVM/Polly, worked on hardware design with LLHD/CIRCT, and co-developed the xDSL Python-Native MLIR-style compiler framework, which is used to target low-power AI accelerators or quantum computers. Over the last few years, he started to look into formal methods in the context of the Lean ITP.</p>
 
 <h2 id="keynote-2">Keynote 2</h2>
 
@@ -275,7 +279,7 @@ Ioan Hadade is a Principal Computational Scientist and Team Leader of the HPC Ap
 
 <p><strong>Speaker:</strong> Dr Carole Jean Wu, Director of AI Research at Meta</p>
 
-<p><img src="CaroleJeanWu.png" width="40%" /></p>
+<p><img src="CaroleJeanWu.png" width="30%" /></p>
 
 <p><strong>Abstract:</strong> The past 50 years have seen a dramatic increase in the amount of compute capability per person, in particular, those enabled by artificial intelligence. It is essential that AI, the twenty-first century’s most important technology, be developed with sustainability in mind. I will highlight key efficiency and sustainability optimization opportunities for cutting-edge AI technologies across an AI model’s life cycle. To scale AI sustainably, we must also go beyond efficiency. I will talk about optimization opportunities across the life cycle of computing infrastructures, from hardware manufacturing to datacenter operations and end-of-life processing for the hardware, capturing both the operational and manufacturing carbon footprint of AI computing. Based on the industry experience and lessons learned, I will share key challenges and opportunities on the horizon for at-scale optimization. This talk will conclude with important development and research directions to advance AI computing sustainably.</p>
 
