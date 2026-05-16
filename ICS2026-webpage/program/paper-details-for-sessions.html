@@ -271,10 +271,6 @@ table {
   width: 100%;
 }
 
-tr:nth-child(even) {
-  background-color: #eeeeee;
-}
-
 td, th {
   border: 1px solid #aaaaaa;
   text-align: left;
@@ -285,6 +281,18 @@ td, th {
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+.registration{
+  background-color: #dddddd;
+}
+.coffee{
+  background-color: #ffeedd;
+}
+.lunch{
+  background-color: #ffeedd;
+}
+.social{
+  background-color: #eeddff;
 }
 </style>
 </head>
@@ -298,96 +306,269 @@ td, th {
   <tr style="background-color:#008866">
     <th style="width: 10%"><h3>Day</h3></th>
     <th style="width: 9%"><h3>Time</h3></th>
-    <th style="width: 27%"><h3>Track A</h3></th>
-    <th style="width: 27%"><h3>Track B</h3></th>
-    <th style="width: 27%"><h3>Track C</h3></th>
+    <th style="width: 27%"><h3>Room A</h3></th>
+    <th style="width: 27%"><h3>Room B</h3></th>
+    <th style="width: 27%"><h3>Room C</h3></th>
   </tr>
-  <tr>
+  <tr class="registration">
+    <td><h3>Monday</h3></td>
+    <td><h3>08:00-09:00</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Registration</h3></td>
+  </tr>
+  <tr class="session">
+    <td></td>
+    <td><h3>09:00-10:30</h3></td>
+	<td><h3>Workshop Session</h3></td>
+	<td><h3>Workshop Session</h3></td>
+	<td><h3>Workshop Session</h3></td>
+  </tr>
+  <tr class="coffee">
+    <td></td>
+    <td><h3>10:30-11:00</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Coffee</h3></td>
+  </tr>
+  <tr class="session">
+    <td></td>
+    <td><h3>11:00-12:30</h3></td>
+	<td><h3>Workshop Session</h3></td>
+	<td><h3>Workshop Session</h3></td>
+	<td><h3>Workshop Session</h3></td>
+  </tr>
+  <tr class="lunch">
+    <td></td>
+    <td><h3>12:30-13:30</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Lunch</h3></td>
+  </tr>
+  <tr class="session">
+    <td></td>
+    <td><h3>13:30-15:00</h3></td>
+	<td><h3>Workshop Session</h3></td>
+	<td><h3>Workshop Session</h3></td>
+	<td><h3>Workshop Session</h3></td>
+  </tr>
+  <tr class="coffee">
+    <td></td>
+    <td><h3>15:00-15:30</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Coffee</h3></td>
+  </tr>
+  <tr class="session">
+    <td></td>
+    <td><h3>15:30-17:00</h3></td>
+	<td><h3>Workshop Session</h3></td>
+	<td><h3>Workshop Session</h3></td>
+	<td><h3>Workshop Session</h3></td>
+  </tr>
+  <tr style="background-color:#008866">
+    <th style="width: 10%"><h3>Day</h3></th>
+    <th style="width: 9%"><h3>Time</h3></th>
+    <th style="width: 27%"><h3>Room A</h3></th>
+    <th style="width: 27%"><h3>Room B</h3></th>
+    <th style="width: 27%"><h3>Room C</h3></th>
+  </tr>
+  <tr class="registration">
     <td><h3>Tuesday</h3></td>
-    <td><h3>09:20 AM</h3></td>
-    <td><h3>Best Paper Candidates</h3></td>
+    <td><h3>07:00-08:00</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Registration</h3></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><h3>08:10-09:20</h3></td>
+	<td><h3>Opening<br />Keynote: Carole-Jean Wu</h3></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td><h3>10:50 AM</h3></td>
-    <td><h3>Compiler, Code Generation and Autotuning</h3></td>
+    <td><h3>09:20-10:20</h3></td>
+    <td><h3>Best Paper Candidates (Plenary)</h3></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="coffee">
+    <td></td>
+    <td><h3>10:20-10:50</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Coffee</h3></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><h3>10:50-12:10</h3></td>
     <td><h3>Runtime Scheduling and Adaptive Execution</h3></td>
+    <td><h3>Compiler, Code Generation and Autotuning</h3></td>
     <td><h3>Energy &amp; Sustainability</h3></td>
   </tr>
+  <tr class="lunch">
+    <td></td>
+    <td><h3>12:10-13:40</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Lunch + Posters</h3></td>
+  </tr>
   <tr>
     <td></td>
-    <td><h3>01:40 PM</h3></td>
-    <td></td>
+    <td><h3>13:40-15:00</h3></td>
     <td><h3>Performance Modeling &amp; Insight</h3></td>
     <td><h3>I/O &amp; Storage</h3></td>
+    <td></td>
   </tr>
-  <tr>
-	<td><h3>Wednesday</h3></td>
-	<td><h3>10:50 AM</h3></td>
-	<td><h3>Graph Search &amp; Paths</h3></td>
+  <tr class="coffee">
+    <td></td>
+    <td><h3>15:00-15:30</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Coffee</h3></td>
+  </tr>
+  <tr class="social">
+    <td></td>
+    <td><h3>16:00 - 18:00</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Tour of Belfast</h3></td>
+  </tr>
+  <tr class="social">
+    <td></td>
+    <td><h3>18:00 - 20:00</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Reception at Dark Horse</h3></td>
+  </tr>
+  <tr style="background-color:#008866">
+    <th style="width: 10%"><h3>Day</h3></th>
+    <th style="width: 9%"><h3>Time</h3></th>
+    <th style="width: 27%"><h3>Room A</h3></th>
+    <th style="width: 27%"><h3>Room B</h3></th>
+    <th style="width: 27%"><h3>Room C</h3></th>
+  </tr>
+  <tr class="registration">
+    <td><h3>Wednesday</h3></td>
+    <td><h3>07:30-08:10</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Registration</h3></td>
+  </tr>
+  <tr class="keynote">
+    <td></td>
+    <td><h3>08:10-9:20</h3></td>
+	<td><h3>Keynote: Tobias Grosser</h3></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="plenary">
+    <td></td>
+    <td><h3>09:20-10:20</h3></td>
+	<td><h3>Lightning Talks/Posters (Plenary)</h3></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr class="coffee">
+    <td></td>
+    <td><h3>10:20-10:50</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Coffee</h3></td>
+  </tr>
+  <tr class="session">
+	<td></td>
+	<td><h3>10:50-12:10</h3></td>
 	<td><h3>AI Training Systems</h3></td>
+	<td><h3>Graph Search &amp; Paths</h3></td>
 	<td><h3>Communication &amp; Collectives</h3></td>
   </tr>
+  <tr class="lunch">
+    <td></td>
+    <td><h3>12:10-13:40</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Lunch + Posters</h3></td>
+  </tr>
   <tr>
 	<td></td>
-	<td><h3>01:40 PM</h3></td>
-	<td><h3>Graph Analytics</h3></td>
+	<td><h3>13:40-15:00</h3></td>
 	<td><h3>LLM Serving</h3></td>
+	<td><h3>Graph Analytics</h3></td>
 	<td><h3>Near-Memory Architectures</h3></td>
   </tr>
-  <tr>
-	<td></td>
-	<td><h3>03:30 PM</h3></td>
-	<td><h3>Graph Traversal &amp; Connectivity</h3></td>
-	<td><h3>Data Analytics &amp; Compression</h3></td>
-	<td><h3>CXL &amp; Memory Systems</h3></td>
+  <tr class="coffee">
+    <td></td>
+    <td><h3>15:00-15:30</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Coffee</h3></td>
   </tr>
   <tr>
-	<td><h3>Thursday</h3></td>
-	<td><h3>09:20 AM</h3></td>
+	<td></td>
+	<td><h3>15:30-17:10</h3></td>
+	<td><h3>Data Analytics &amp; Compression</h3></td>
+	<td><h3>Graph Traversal &amp; Connectivity</h3></td>
+	<td><h3>CXL &amp; Memory Systems</h3></td>
+  </tr>
+  <tr class="social">
+    <td></td>
+    <td><h3>18:00-20:00 </h3></td>
+	<td colspan="3" style="text-align:center"><h3>Banquet at The Lanyon Building, Queen's University Belfast</h3></td>
+  </tr>
+  <tr style="background-color:#008866">
+    <th style="width: 10%"><h3>Day</h3></th>
+    <th style="width: 9%"><h3>Time</h3></th>
+    <th style="width: 27%"><h3>Room A</h3></th>
+    <th style="width: 27%"><h3>Room B</h3></th>
+    <th style="width: 27%"><h3>Room C</h3></th>
+  </tr>
+  <tr class="registration">
+    <td><h3>Thursday</h3></td>
+    <td><h3>07:30-08:10</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Registration</h3></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><h3>08:10-9:20</h3></td>
+	<td><h3>Keynote: Ioan Hadade</h3></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+	<td></td>
+	<td><h3>09:20-10:20</h3></td>
 	<td><h3>Cross-Layer Performance Optimization</h3></td>		
 	<td></td>
 	<td></td>
   </tr>
+  <tr class="coffee">
+    <td></td>
+    <td><h3>10:20-10:50</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Coffee</h3></td>
+  </tr>
   <tr>
 	<td></td>
-	<td><h3>10:50 AM</h3></td>
-	<td><h3>GPU-Accelerated Query and Geometry</h3></td>
+	<td><h3>10:50-12:10</h3></td>
 	<td><h3>AI Inference</h3></td>
+	<td><h3>GPU-Accelerated Query and Geometry</h3></td>
 	<td><h3>Resilience and Error Detection</h3></td>
   </tr>
-  <tr>
-	<td></td>
-	<td><h3>01:40 PM</h3></td>
-	<td><h3>Sparse &amp; Tensor Kernels</h3>	</td>
-	<td><h3>AI Kernels &amp; Parallelism</h3></td>
-	<td><h3>Energy-Aware Systems</h3></td>
+  <tr class="lunch">
+    <td></td>
+    <td><h3>12:10-13:40</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Lunch + Posters</h3></td>
   </tr>
   <tr>
 	<td></td>
-	<td><h3>03:30 PM</h3></td>
-	<td><h3>Numerical &amp; Scientific Kernels</h3></td>
+	<td><h3>13:40-14:40</h3></td>
+	<td><h3>AI Kernels &amp; Parallelism</h3></td>
+	<td><h3>Sparse &amp; Tensor Kernels</h3>	</td>
+	<td><h3>Energy-Aware Systems</h3></td>
+  </tr>
+  <tr class="coffee">
+    <td></td>
+    <td><h3>15:00-15:30</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Coffee</h3></td>
+  </tr>
+  <tr>
+	<td></td>
+	<td><h3>15:30-17:10</h3></td>
 	<td><h3>Efficient Privacy Computing</h3></td>
+	<td><h3>Numerical &amp; Scientific Kernels</h3></td>
 	<td><h3>Quantum Computing</h3></td>
   </tr>
 </table>
 
 <br />
+<h1 style="text-align:center">ICS 2026 Paper Session Details</h1>
 
 <h2 style="text-align:center">Tuesday 7 July 2026</h2>
 <table class="tuesday-detail">
   <tbody>
   <tr style="background-color:#008866">
     <th style="width: 10%"><h2>Time</h2></th>
-    <th style="width: 30%"><h2>Track A</h2> </th>
-    <th style="width: 30%"><h2>Track B</h2> </th>
-    <th style="width: 30%"><h2>Track C</h2> </th>
+    <th style="width: 30%"><h2>Room A</h2> </th>
+    <th style="width: 30%"><h2>Room B</h2> </th>
+    <th style="width: 30%"><h2>Room C</h2> </th>
   </tr>
   <tr>
-  	<td class="time"><h2>09:20 AM- 10:40 AM</h2></td>
-  	<td colspan="3"><h2>S01: Best Paper Candidates</h2> 
+  	<td class="time"><h2>09:20- 10:20</h2></td>
+  	<td><h2>S01: Best Paper Candidates</h2> 
 	<strong>Coordinating GPU Data Centers and Power Grid Regulation Service for Exogenous Carbon Benefits</strong><br />
 	D. Wong, A. Jahanshahi, S. Golrouye, O. Anderson, N. Yu<br /><br /> 
 	<strong>FLYING SERVING: On-the-Fly Parallelism Switching for Large Language Model Serving</strong><br />
@@ -395,20 +576,13 @@ td, th {
 	<strong>OCTANE: Breaking the Neighbor-List Bottleneck in GPU Molecular Dynamics</strong><br />
 	H. Toutouni, S. Chakraborty, Y. Tu, J. Huang
 	</td>
+	<td>
+	</td>
+	<td>
+	</td>
   </tr>
   <tr>
-  	<td class="time"><h2>10:50 AM- 12:10 PM</h2></td>
-  	<td>
-		<h2>S02: Compiler, Code Generation and Autotuning</h2> 
-		<strong>GRASP: Optimizing VLIW Instruction Scheduling via Graph Reinforcement Learning</strong><br />
-		Z. Wang, W. Tong, J. Fang, Y. Zhang, W. Wang, J. Ren, Z. Tang<br /><br /> 
-		<strong>Continuation-Preserving Tiling for Pointer-Chasing Optimization in Structured Mutual Recursion</strong><br />
-		A. Kumar, V. Singh, S. Biswas<br /><br /> 
-		<strong>S2VEC: Compiler-Driven Stream Specialization for Linearized Vectorization</strong><br />
-		L. Crespo, A. Fernandes, G. Falcao, P. Tomás, N. Roma, N. Neves<br /><br /> 
-		<strong>CKTI: A Domain-Specific Compiler for Lowering CUDA Kernels to Triton-IR</strong><br />
-		C. Shi, R. Chen, Y. Sun, Y. Sui, J. Zhang, Y. Xie, M. Wang, S. Ming, S. Zhang, Y. Zhang<br />
-	</td> 
+  	<td class="time"><h2>10:50- 12:10</h2></td>
   	<td>
 		<h2>S03: Runtime Scheduling and Adaptive Execution</h2> 
 	<strong>Barrier-Aware Task Scheduling for Bulk-Synchronous Parallel Architectures</strong><br />	
@@ -419,6 +593,17 @@ td, th {
 	X. Peng, Q. Wang, G. Liu, C. Hong, R. Xia, Z. Sun, X. Chen, Q. Zhang, J. Liu<br /><br /> 
 	<strong>Lock Shielding: A General Technique for Misuse-Resilient Locks</strong><br />	
 	V. Shahare, M. Chabbi, N. Hegde<br /><br /> 
+	</td> 
+  	<td>
+		<h2>S02: Compiler, Code Generation and Autotuning</h2> 
+		<strong>GRASP: Optimizing VLIW Instruction Scheduling via Graph Reinforcement Learning</strong><br />
+		Z. Wang, W. Tong, J. Fang, Y. Zhang, W. Wang, J. Ren, Z. Tang<br /><br /> 
+		<strong>Continuation-Preserving Tiling for Pointer-Chasing Optimization in Structured Mutual Recursion</strong><br />
+		A. Kumar, V. Singh, S. Biswas<br /><br /> 
+		<strong>S2VEC: Compiler-Driven Stream Specialization for Linearized Vectorization</strong><br />
+		L. Crespo, A. Fernandes, G. Falcao, P. Tomás, N. Roma, N. Neves<br /><br /> 
+		<strong>CKTI: A Domain-Specific Compiler for Lowering CUDA Kernels to Triton-IR</strong><br />
+		C. Shi, R. Chen, Y. Sun, Y. Sui, J. Zhang, Y. Xie, M. Wang, S. Ming, S. Zhang, Y. Zhang<br />
 	</td> 
   	<td>
 		<h2>S04: Energy &amp; Sustainability</h2> 
@@ -433,7 +618,7 @@ td, th {
 	</td> 
   </tr>
   <tr>
-  	<td class="time"><h2>01:40 PM- 03:00 PM</h2></td>
+  	<td class="time"><h2>13:40- 15:00</h2></td>
 	<td>
 		<h2>S05: Performance Modeling &amp; Insight</h2>
 		<strong>TenProf: A Tensor-Centric Profiler for Deep Learning Workload Analysis and Optimization</strong><br />
@@ -467,23 +652,12 @@ td, th {
   <tbody>
   <tr style="background-color:#008866">
     <th style="width: 10%"><h2>Time</h2></th>
-    <th style="width: 30%"><h2>Track A</h2> </th>
-    <th style="width: 30%"><h2>Track B</h2> </th>
-    <th style="width: 30%"><h2>Track C</h2> </th>
+    <th style="width: 30%"><h2>Room A</h2> </th>
+    <th style="width: 30%"><h2>Room B</h2> </th>
+    <th style="width: 30%"><h2>Room C</h2> </th>
   </tr>
   <tr>
-  	<td class="time"><h2>10:50 AM- 12:10 PM</h2></td>
-	<td>
-		<h2>S07: Graph Search &amp; Paths</h2>
-		<strong>G-PathGen: An Efficient GPU-Parallel k-Critical Path Generation Algorithm</strong><br />
-		C. Chang, Y. Chung, C. Chiu, W. Lee, B. Zhang, U. Schlichtmann, I. Lin, X. Yu, T. Huang<br /><br /> 
-		<strong>Parallel Bidirectional A* Search for GPU-Accelerated Pathfinding</strong><br />
-		H. Al Khansa, J. Luna, A. Mouawad, I. Hajj<br /><br /> 
-		<strong>MPMOS: Massively Parallel Multi-Objective Shortest Paths</strong><br />
-		L. Gold, D. Sidoti, K. Pattipati, O. Khan<br /><br /> 
-		<strong>Distributed Disjoint Weighted Matchings in Demand-Aware Reconfigurable Optical Datacenters</strong><br />
-		S. Heck, K. Hanauer, S. Schmid<br /><br /> 
-	</td>
+  	<td class="time"><h2>10:50- 12:10</h2></td>
 	<td>
 		<h2>S08: AI Training Systems</h2>
 		<strong>Closing the Efficiency Gap: AI Datacenter Co-design Roadmap for Scalable Training of LLMs</strong><br />
@@ -494,6 +668,17 @@ td, th {
 		Q. chen, S. Li, W. GAO, P. Sun, Y. Wen, T. Zhang<br /><br /> 
 		<strong>Rudder: Steering Prefetching in Distributed GNN Training using LLM Agents</strong><br />
 		A. Sarkar, S. Ghosh, N. Tallent, A. Chadha, T. Roosta, A. Jannesari<br /><br /> 
+	</td>
+	<td>
+		<h2>S07: Graph Search &amp; Paths</h2>
+		<strong>G-PathGen: An Efficient GPU-Parallel k-Critical Path Generation Algorithm</strong><br />
+		C. Chang, Y. Chung, C. Chiu, W. Lee, B. Zhang, U. Schlichtmann, I. Lin, X. Yu, T. Huang<br /><br /> 
+		<strong>Parallel Bidirectional A* Search for GPU-Accelerated Pathfinding</strong><br />
+		H. Al Khansa, J. Luna, A. Mouawad, I. Hajj<br /><br /> 
+		<strong>MPMOS: Massively Parallel Multi-Objective Shortest Paths</strong><br />
+		L. Gold, D. Sidoti, K. Pattipati, O. Khan<br /><br /> 
+		<strong>Distributed Disjoint Weighted Matchings in Demand-Aware Reconfigurable Optical Datacenters</strong><br />
+		S. Heck, K. Hanauer, S. Schmid<br /><br /> 
 	</td>
 	<td>
 		<h2>S09: Communication &amp; Collectives</h2>
@@ -508,18 +693,7 @@ td, th {
 	</td>
   </tr>
   <tr>
-  	<td class="time"><h2>01:40 PM- 03:00 PM</h2></td>
-	<td>
-		<h2>S10: Graph Analytics</h2>
-		<strong>DCSM: Enabling Inter-Batch Parallelism for Continuous Subgraph Matching on GPU</strong><br />
-		Y. Wei, P. Jiang<br /><br /> 
-		<strong>SVSIG: Incremental Streaming Graph Processing with Source Vertex Suppression</strong><br />
-		J. Huang, X. Yan, D. Fu, H. Bian, T. Cao, Z. Li<br /><br /> 
-		<strong>GAAF: Fast and Scalable Graph-based Vector Similarity Search with Any-Match Label Filtering</strong><br />
-		M. Ma, X. Yin, J. Qiu<br /><br /> 
-		<strong>HoloGraph: Bridging the Throughput Gap in Heterogeneous Graph Pattern Matching via Workload-Aware Steering</strong><br />
-		M. Haotian, W. Hsu, Y. Chung<br /><br /> 
-	</td>
+  	<td class="time"><h2>13:40- 15:00</h2></td>
 	<td>
 		<h2>S11: LLM Serving</h2>
 		<strong>Taming Dynamic Diffusion LLM Inference through Virtual Static Execution</strong><br />
@@ -530,6 +704,17 @@ td, th {
 		Z. Shen, W. Bu, X. He, K. Sheng, H. Chen<br /><br /> 
 		<strong>dLLM-Serve: Bridging the Memory Gap in Diffusion Language Model Serving</strong><br />
 		J. Fan, Y. Zhang, X. Li, D. Nikolopoulos<br /><br /> 
+	</td>
+	<td>
+		<h2>S10: Graph Analytics</h2>
+		<strong>DCSM: Enabling Inter-Batch Parallelism for Continuous Subgraph Matching on GPU</strong><br />
+		Y. Wei, P. Jiang<br /><br /> 
+		<strong>SVSIG: Incremental Streaming Graph Processing with Source Vertex Suppression</strong><br />
+		J. Huang, X. Yan, D. Fu, H. Bian, T. Cao, Z. Li<br /><br /> 
+		<strong>GAAF: Fast and Scalable Graph-based Vector Similarity Search with Any-Match Label Filtering</strong><br />
+		M. Ma, X. Yin, J. Qiu<br /><br /> 
+		<strong>HoloGraph: Bridging the Throughput Gap in Heterogeneous Graph Pattern Matching via Workload-Aware Steering</strong><br />
+		M. Haotian, W. Hsu, Y. Chung<br /><br /> 
 	</td>
 	<td>
 		<h2>S12: Near-Memory Architectures</h2>
@@ -545,20 +730,7 @@ td, th {
   </tr>
 
   <tr>
-  	<td class="time"><h2>03:30 PM- 05:10 PM</h2></td>
-	<td>
-		<h2>S13: Graph Traversal &amp; Connectivity</h2>
-		<strong>cuMIS: A Unified Scalable Framework for Computing Maximal Independent Sets on Trillion-Edge Graphs</strong><br />
-		J. Nke, S. Kang, B. Rees, C. Lee<br /><br /> 
-		<strong>BLEST: Blazingly Efficient BFS using Tensor Cores</strong><br />
-		D. Elbek, K. Kaya<br /><br /> 
-		<strong>CORE-BFS: Communication Optimized Rectangular Partitioned BFS Achieving 160.845 TeraTEPS on Frontier Supercomputer</strong><br />
-		H. Yang, H. Lu, M. Matheson, F. Wang, H. Liu<br /><br /> 
-		<strong>DynLP: Parallel Dynamic Batch Update for Label Propagation in Semi-Supervised Learning</strong><br />
-		S. Shovan, A. Khanda, S. Ferdous, S. Das, M. Halappanavar<br /><br /> 
-		<strong>Asynchronous Distributed Algorithms for Maximal-Weighted Graph Matching</strong><br />
-		S. Singhal, J. Yang, A. Hayashi, V. Sarkar<br /><br /> 
-	</td>
+  	<td class="time"><h2>15:30- 17:10</h2></td>
 	<td>
 		<h2>S14: Data Analytics &amp; Compression</h2>
 		<strong>GPZ: GPU-Accelerated Lossy Compressor for Particle Data</strong><br />
@@ -571,6 +743,19 @@ td, th {
 		K. Tan, Y. Du, D. Zhan, Y. Xie, H. Yu, B. Zhao, H. Liu<br /><br /> 
 		<strong>TADS: Trend-Aware Dynamic Load Balancing for Large-Scale SNN Simulations with Delay-Sharded Graph Infrastructure</strong><br /> 
 		H. Huang, S. Pang, Y. Zeng, G. Feng, Z. Chen, Y. Lu<br /><br /> 
+	</td>
+	<td>
+		<h2>S13: Graph Traversal &amp; Connectivity</h2>
+		<strong>cuMIS: A Unified Scalable Framework for Computing Maximal Independent Sets on Trillion-Edge Graphs</strong><br />
+		J. Nke, S. Kang, B. Rees, C. Lee<br /><br /> 
+		<strong>BLEST: Blazingly Efficient BFS using Tensor Cores</strong><br />
+		D. Elbek, K. Kaya<br /><br /> 
+		<strong>CORE-BFS: Communication Optimized Rectangular Partitioned BFS Achieving 160.845 TeraTEPS on Frontier Supercomputer</strong><br />
+		H. Yang, H. Lu, M. Matheson, F. Wang, H. Liu<br /><br /> 
+		<strong>DynLP: Parallel Dynamic Batch Update for Label Propagation in Semi-Supervised Learning</strong><br />
+		S. Shovan, A. Khanda, S. Ferdous, S. Das, M. Halappanavar<br /><br /> 
+		<strong>Asynchronous Distributed Algorithms for Maximal-Weighted Graph Matching</strong><br />
+		S. Singhal, J. Yang, A. Hayashi, V. Sarkar<br /><br /> 
 	</td>
 	<td>
 		<h2>S15: CXL &amp; Memory Systems</h2>
@@ -596,12 +781,12 @@ td, th {
   <tbody>
   <tr style="background-color:#008866">
     <th style="width: 10%"><h2>Time</h2></th>
-    <th style="width: 30%"><h2>Track A</h2> </th>
-    <th style="width: 30%"><h2>Track B</h2> </th>
-    <th style="width: 30%"><h2>Track C</h2> </th>
+    <th style="width: 30%"><h2>Room A</h2> </th>
+    <th style="width: 30%"><h2>Room B</h2> </th>
+    <th style="width: 30%"><h2>Room C</h2> </th>
   </tr>
   <tr>
-  	<td class="time"><h2>09:20 AM- 10:20 PM</h2></td>
+  	<td class="time"><h2>09:20- 10:20</h2></td>
 	<td>
 		<h2>S16: Cross-Layer Performance Optimization</h2>
 		<strong>THAC: Unlocking Performance in Parallel HPC Applications via UQ-Aware Automated Approximation</strong><br /> 
@@ -617,16 +802,7 @@ td, th {
 	</td>
   </tr>
   <tr>
-  	<td class="time"><h2>10:50 AM- 12:10 PM</h2></td>
-	<td>
-		<h2>S17: GPU-Accelerated Query and Geometry</h2>
-		<strong>Parallel Query Processing through Optimal Key Grouping on GPU-Based B+-Trees</strong><br /> 
-		Z. Chen, J. Li, J. Meng, N. Pitaksirianan, Y. Tu, B. Zeng, C. Dong<br /><br /> 
-		<strong>X-HD: Fast Hausdorff Distance Computation with Ray Tracing</strong><br /> 
-		L. Geng, Z. Yuan, R. Lee, X. Zhang, F. Wang<br /><br /> 
-		<strong>Rethinking Collision Detection on GPU Ray Tracing Architecture</strong><br /> 
-		D. Mandarapu, I. Fuksman, A. Pelenitysn, G. Bernstein, M. Kulkarni<br /><br /> 
-	</td>
+  	<td class="time"><h2>10:50- 12:10</h2></td>
 	<td>
 		<h2>S18: AI Inference</h2>
 		<strong>LayerScope: Predictive Cross-Layer Scheduling for Efficient Multi-Batch MoE Inference on Legacy Servers</strong><br /> 
@@ -637,6 +813,15 @@ td, th {
 		Y. Zheng, J. Sun, H. Li, G. Sun, J. Li<br /><br /> 
 		<strong>Latency-SLO-Aware Memory Offloading for Large Language Model Inference</strong><br /> 
 		C. Ma, H. Zhao, Z. Ye, Z. Yang, T. Fu, J. Han, J. Zhang, Y. Luo, X. Wang, Z. Wang, Y. Li, D. Zhou<br /><br /> 
+	</td>
+	<td>
+		<h2>S17: GPU-Accelerated Query and Geometry</h2>
+		<strong>Parallel Query Processing through Optimal Key Grouping on GPU-Based B+-Trees</strong><br /> 
+		Z. Chen, J. Li, J. Meng, N. Pitaksirianan, Y. Tu, B. Zeng, C. Dong<br /><br /> 
+		<strong>X-HD: Fast Hausdorff Distance Computation with Ray Tracing</strong><br /> 
+		L. Geng, Z. Yuan, R. Lee, X. Zhang, F. Wang<br /><br /> 
+		<strong>Rethinking Collision Detection on GPU Ray Tracing Architecture</strong><br /> 
+		D. Mandarapu, I. Fuksman, A. Pelenitysn, G. Bernstein, M. Kulkarni<br /><br /> 
 	</td>
 	<td>
 		<h2>S19: Resilience and Error Detection</h2>
@@ -651,18 +836,7 @@ td, th {
 	</td>
   </tr>
   <tr>
-  	<td class="time"><h2>01:40 PM- 03:00 PM</h2></td>
-	<td>
-		<h2>S20: Sparse &amp; Tensor Kernels</h2>
-		<strong>Parametric Mappings for Distributed Tensor Computations</strong><br /> 
-		B. Wu, M. Kong<br /><br /> 
-		<strong>Communication-Avoiding SpGEMM via Trident Partitioning on Hierarchical GPU Interconnect</strong><br /> 
-		J. Bellavita, L. Pichetti, T. Pasquali, F. Vella, G. Guidi<br /><br /> 
-		<strong>Ocean: Fast Estimation-Based Sparse General Matrix-Matrix Multiplication on GPU</strong><br /> 
-		Y. Li, G. Guidi<br /><br /> 
-		<strong>PolyKAN: A High-Performance and Universal GPU Operator Library for Polynomial Kolmogorov-Arnold Networks</strong><br /> 
-		M. Yu, H. Zhong, J. Jiang, D. Huang, Y. Lu<br /><br /> 
-	</td>
+  	<td class="time"><h2>13:40- 15:00</h2></td>
 	<td>
 		<h2>S21: AI Kernels &amp; Parallelism</h2>
 		<strong>HPMD: Enabling Hybrid Parallelism with Multi-Dimensional Adaptive DNN Training</strong><br /> 
@@ -673,6 +847,17 @@ td, th {
 		R. Fan, X. Yu, Z. Li, W. Luo, G. Gong, X. Chu<br /><br /> 
 		<strong>Three Birds, One Stone: Fast, Accurate-aware and Cost-Efficient Accelerator for Ternary LLM</strong><br /> 
 		W. Jung, J. Kang, S. Shin, H. Um, J. Lim, G. Koo, Y. Park, S. Park, T. Suh<br /><br /> 
+	</td>
+	<td>
+		<h2>S20: Sparse &amp; Tensor Kernels</h2>
+		<strong>Parametric Mappings for Distributed Tensor Computations</strong><br /> 
+		B. Wu, M. Kong<br /><br /> 
+		<strong>Communication-Avoiding SpGEMM via Trident Partitioning on Hierarchical GPU Interconnect</strong><br /> 
+		J. Bellavita, L. Pichetti, T. Pasquali, F. Vella, G. Guidi<br /><br /> 
+		<strong>Ocean: Fast Estimation-Based Sparse General Matrix-Matrix Multiplication on GPU</strong><br /> 
+		Y. Li, G. Guidi<br /><br /> 
+		<strong>PolyKAN: A High-Performance and Universal GPU Operator Library for Polynomial Kolmogorov-Arnold Networks</strong><br /> 
+		M. Yu, H. Zhong, J. Jiang, D. Huang, Y. Lu<br /><br /> 
 	</td>
 	<td>
 		<h2>S22: Energy-Aware Systems</h2>
@@ -687,20 +872,7 @@ td, th {
 	</td>
   </tr>
   <tr>
-  	<td class="time"><h2>03:30 PM- 05:10 PM</h2></td>
-	<td>
-		<h2>S23: Numerical &amp; Scientific Kernels</h2>
-		<strong>WindStencil: Unleashing GPU Potential for High-Order Stencil Computation in High-Performance Inviscid CFD Simulations</strong><br /> 
-		X. Zhang, H. Zhang, X. Liu, J. Li, R. Jin, J. Zhang, W. Yuan, S. Liang, Z. Lu<br /><br /> 
-		<strong>Cheetah: Optimizing Execution Pipelines for Matrix-Free Finite Element Operators on GPUs</strong><br /> 
-		J. Ren, H. Ltaief, S. Zampini, D. Keyes<br /><br /> 
-		<strong>AdaPolySI: Adaptive Polynomial Filtered Subspace Iteration for Hermitian Interior Eigenvalue Problems</strong><br /> 
-		Y. Ni, X. Xu, S. Li, J. Zhang, J. Chen, J. Wang, J. Roman<br /><br /> 
-		<strong>Non-Delayed Cholesky Factorization</strong><br /> 
-		Y. Luo, S. Zhang, W. Liu<br /><br /> 
-		<strong>Parallel Quadratic Selected Inversion in Quantum Transport Simulation</strong><br /> 
-		V. Maillou, M. Bollhofer, O. Schenk, A. Ziogas, M. Luisier<br /><br /> 
-	</td>
+  	<td class="time"><h2>15:30- 17:10</h2></td>
 	<td>
 		<h2>S24: Efficient Privacy Computing</h2>
 		<strong>MegaZK: A Memory Efficient GPU System Accelerating End-to-end Zero-Knowledge Proof</strong><br /> 
@@ -713,6 +885,19 @@ td, th {
 		Z. Gong, R. Ran, F. Yao, W. Wen<br /><br /> 
 		<strong>CipherSkip: Efficient Sparse Matrix Multiplication with FHE</strong><br /> 
 		W. Xiong, H. Zhou, Y. Ye, R. Jin, L. Xu<br /><br /> 
+	</td>
+	<td>
+		<h2>S23: Numerical &amp; Scientific Kernels</h2>
+		<strong>WindStencil: Unleashing GPU Potential for High-Order Stencil Computation in High-Performance Inviscid CFD Simulations</strong><br /> 
+		X. Zhang, H. Zhang, X. Liu, J. Li, R. Jin, J. Zhang, W. Yuan, S. Liang, Z. Lu<br /><br /> 
+		<strong>Cheetah: Optimizing Execution Pipelines for Matrix-Free Finite Element Operators on GPUs</strong><br /> 
+		J. Ren, H. Ltaief, S. Zampini, D. Keyes<br /><br /> 
+		<strong>AdaPolySI: Adaptive Polynomial Filtered Subspace Iteration for Hermitian Interior Eigenvalue Problems</strong><br /> 
+		Y. Ni, X. Xu, S. Li, J. Zhang, J. Chen, J. Wang, J. Roman<br /><br /> 
+		<strong>Non-Delayed Cholesky Factorization</strong><br /> 
+		Y. Luo, S. Zhang, W. Liu<br /><br /> 
+		<strong>Parallel Quadratic Selected Inversion in Quantum Transport Simulation</strong><br /> 
+		V. Maillou, M. Bollhofer, O. Schenk, A. Ziogas, M. Luisier<br /><br /> 
 	</td>
 	<td>
 		<h2>S25: Quantum Computing</h2>
