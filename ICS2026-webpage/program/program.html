@@ -294,6 +294,12 @@ td, th {
 .social{
   background-color: #eeddff;
 }
+.session{
+	border-bottom : none;
+}
+.session-chair{
+	border-top : none;
+}
 </style>
 </head>
 <body>
@@ -515,7 +521,7 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
   <tr class="social">
     <td></td>
     <td><h3>18:00-20:00 </h3></td>
-	<td colspan="3" style="text-align:center"><h3>Conference Toast and Tour of Queen's University Belfast</h3></td>
+	<td colspan="3" style="text-align:center"><h3>Conference Toast and Tour of Queen's University Belfast (included for all attendees)</h3></td>
   </tr>
   <tr class="social">
     <td></td>
@@ -600,8 +606,24 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
     <th style="width: 30%"><h2>Minor Hall</h2> </th>
   </tr>
   <tr>
-  	<td class="time"><h2>09:20- 10:20</h2></td>
-  	<td><h2 id="s01">Best Paper Candidates</h2> 
+  	<td class="session"><h2>08:10- 09:20</h2></td>
+  	<td class="session"><h2 id="s01">Opening + Keynote</h2> 
+	<strong>Keynote: <a style="color:blue" href="../keynote/keynote.html#keynote-1">Scaling AI Computing Sustainably: A Journey Towards Sustainable AI </a>
+	</strong><br />
+	<strong>Dr. Carole Jean Wu</strong>, Director of AI Research at Meta
+	</td>
+    <td colspan="2" class="session" style="text-align:center;vertical-align:middle"> (No sessions)</td>
+  </tr>
+  <tr>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Hans Vandierendonck
+	</td>
+    <td colspan="2" class="session-chair" style="text-align:center;vertical-align:middle"></td>
+  </tr>
+  <tr>
+  	<td class="session"><h2>09:20- 10:20</h2></td>
+  	<td class="session"><h2 id="s01">Best Paper Candidates</h2> 
 	<strong>Coordinating GPU Data Centers and Power Grid Regulation Service for Exogenous Carbon Benefits</strong><br />
 	A. Jahanshahi, S. Golrouye, O. Anderson, N. Yu, D. Wong<br /><br /> 
 	<strong>FLYING SERVING: On-the-Fly Parallelism Switching for Large Language Model Serving</strong><br />
@@ -609,11 +631,18 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 	<strong>OCTANE: Breaking the Neighbor-List Bottleneck in GPU Molecular Dynamics</strong><br />
 	H. Toutouni, S. Chakraborty, Y. Tu, J. Huang
 	</td>
-    <td colspan="2" style="text-align:center;vertical-align:middle"> (No sessions)</td>
+    <td class="session" colspan="2" style="text-align:center;vertical-align:middle"> (No sessions)</td>
   </tr>
   <tr>
-  	<td class="time"><h2>10:50- 12:10</h2></td>
-  	<td>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Didem Unat
+	</td>
+    <td colspan="2" class="session-chair" style="text-align:center;vertical-align:middle"></td>
+  </tr>
+  <tr>
+  	<td class="session"><h2>10:50- 12:10</h2></td>
+  	<td class="session">
 		<h2 id="s03">Runtime Scheduling and Adaptive Execution</h2> 
 	<strong>Barrier-Aware Task Scheduling for Bulk-Synchronous Parallel Architectures</strong><br />	
 	T. Noack, A. Koch<br /><br /> 
@@ -622,9 +651,9 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 	<strong>Block-Aware Adaptive State Management for Optimistic Parallel Discrete Event Simulation</strong><br />	
 	X. Peng, Q. Wang, G. Liu, C. Hong, R. Xia, Z. Sun, X. Chen, Q. Zhang, J. Liu<br /><br /> 
 	<strong>Lock Shielding: A General Technique for Misuse-Resilient Locks</strong><br />	
-	V. Shahare, M. Chabbi, N. Hegde<br /><br /> 
+	V. Shahare, M. Chabbi, N. Hegde
 	</td> 
-  	<td>
+  	<td class="session">
 		<h2 id="s02">Compiler, Code Generation and Autotuning</h2> 
 		<strong>GRASP: Optimizing VLIW Instruction Scheduling via Graph Reinforcement Learning</strong><br />
 		Z. Wang, W. Tong, J. Fang, Y. Zhang, W. Wang, J. Ren, Z. Tang<br /><br /> 
@@ -633,9 +662,9 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>S2VEC: Compiler-Driven Stream Specialization for Linearized Vectorization</strong><br />
 		L. Crespo, A. Fernandes, G. Falcao, P. Tomás, N. Roma, N. Neves<br /><br /> 
 		<strong>CKTI: A Domain-Specific Compiler for Lowering CUDA Kernels to Triton-IR</strong><br />
-		C. Shi, R. Chen, Y. Sun, Y. Sui, J. Zhang, Y. Xie, M. Wang, S. Ming, S. Zhang, Y. Zhang<br />
+		C. Shi, R. Chen, Y. Sun, Y. Sui, J. Zhang, Y. Xie, M. Wang, S. Ming, S. Zhang, Y. Zhang
 	</td> 
-  	<td>
+  	<td class="session">
 		<h2 id="s04">Energy &amp; Sustainability</h2> 
 		<strong>Wattchmen: Watching the Wattchers &#x002013; High Fidelity&#x002C; Flexible GPU Energy Modeling</strong><br /> 
 		B. Tran, M. Sinclair, S. Venkataraman, M. Maiterth, W. Shin<br /><br /> 
@@ -644,12 +673,24 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>SmartCap: Coordinated CPU–GPU Power Capping for Performance-Assurance Energy Efficiency</strong><br /> 
 		Z. Zheng, Z. Lan, X. Wu, V. Taylor, M. Papka<br /><br /> 
 		<strong>CATS: Correlation-aware Task Scheduling for GPU Power Optimization in AI Data Centers</strong><br /> 
-		S. Subramaniyan, X. Wang<br />
+		S. Subramaniyan, X. Wang
 	</td> 
   </tr>
   <tr>
-  	<td class="time"><h2>13:40- 15:00</h2></td>
-	<td>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Dimitrios Nikolopoulos 
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Shounak Chakraborty
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Martin Kong
+	</td>
+  </tr>
+  <tr>
+  	<td class="session"><h2>13:40- 15:00</h2></td>
+	<td class="session">
 		<h2 id="s05">Performance Modeling &amp; Insight</h2>
 		<strong>TenProf: A Tensor-Centric Profiler for Deep Learning Workload Analysis and Optimization</strong><br />
 		X. Ding, K. Zhou, Y. Hao, P. Su<br /><br /> 
@@ -658,13 +699,13 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>Mantis: Decoding HPC Telemetry Data for Robust System Prediction</strong><br />
 		Y. Lu, J. Ren, E. Smirni<br /><br /> 
 		<strong>ViSim: A Lightweight SpMV Performance Simulator via Statistical and Visual Residual Learning</strong><br />
-		S. Zhu, W. Huangfu, G. Chu 
+		S. Zhu, W. Huangfu, G. Chu
 	</td> 
-	<td>
+	<td class="session">
 		<h2 id="fortran-mini"><a style="color:blue" href="../workshops/fortran-workshop.html">Fortran Mini-Workshop</a>:</h2>
 		<h3>An interactive discussion of a recent survey of the international Fortran ecosystem led by Austen Rainer and Andrew Brown</h3>
 	</td> 
-	<td>
+	<td class="session">
 		<h2 id="s06">I/O &amp; Storage</h2>
 		<strong>Harmonia: Enhancing Data Placement and Migration in Hybrid Storage Systems via Multi-Agent Reinforcement Learning</strong><br />
 		R. Nadig, V. Arulchelvan, R. Bera, T. Shahroodi, G. Singh, A. Kakolyris, I. Yuksel, M. Sadrosadati, J. Park, O. Mutlu<br /><br /> 
@@ -673,8 +714,19 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>CoCache: Accelerating Reads in KV Stores via Cooperative Metadata and Data Cache Management</strong><br />
 		H. Tang, W. Zhu, Q. Zhang, J. Zhang, J. Jiang, Z. Zhang, H. Zhang, Y. Li, Y. Xu<br /><br /> 
 		<strong>TOTO: Transparent I/O Tuning for HPC Applications</strong><br />
-		F. Boito, L. Teylo, M. Popov, L. Aimi, A. Bandet, L. Pilla, G. Pallez<br /><br /> 
+		F. Boito, L. Teylo, M. Popov, L. Aimi, A. Bandet, L. Pilla, G. Pallez
 	</td> 
+  </tr>
+  <tr>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Lingqi Zhang
+	</td>
+  	<td class="session-chair">
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Zhiling Lan
+	</td>
   </tr>
 </tbody>
 </table>
@@ -689,15 +741,40 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
     <th style="width: 30%"><h2>Minor Hall</h2> </th>
   </tr>
   <tr>
-  	<td class="time"><h2>09:20- 10:20</h2></td>
-  	<td><h2 id="lightning-posters">Lightning Talks/Posters</h2> 
-	<strong>These lightning talks are based on the <a style="color:blue" href="../posters/accepted-poster-submissions.html">accepted posters</a></strong>
+  	<td class="session"><h2>08:10- 09:20</h2></td>
+  	<td class="session"><h2 id="s01">Keynote</h2> 
+	<strong>Keynote:
+	<a style="color:blue" href="../keynote/keynote.html#keynote-2">
+	An Open-Source-First Approach: Multi-Level Compiler Design for AI and HPC</a>
+	</strong><br />
+	<strong>Dr Tobias Grosser</strong>, Associate Professor in Compiler Design, University of Cambridge
 	</td>
-    <td colspan="2" style="text-align:center;vertical-align:middle"> (No sessions)</td>
+    <td colspan="2" class="session" style="text-align:center;vertical-align:middle"> (No sessions)</td>
   </tr>
   <tr>
-  	<td class="time"><h2>10:50- 12:10</h2></td>
-	<td>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Miquel Moretó
+	</td>
+    <td colspan="2" class="session-chair" style="text-align:center;vertical-align:middle"></td>
+  </tr>
+  <tr>
+  	<td class="session"><h2>09:20- 10:20</h2></td>
+  	<td class="session"><h2 id="lightning-posters">Lightning Talks/Posters</h2> 
+	<strong>These lightning talks are based on the <a style="color:blue" href="../posters/accepted-poster-submissions.html">accepted posters</a></strong>
+	</td>
+    <td class="session" colspan="2" style="text-align:center;vertical-align:middle"> (No sessions)</td>
+  </tr>
+  <tr>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Mark Endrei
+	</td>
+    <td colspan="2" class="session-chair" style="text-align:center;vertical-align:middle"></td>
+  </tr>
+  <tr>
+  	<td class="session"><h2>10:50- 12:10</h2></td>
+	<td class="session">
 		<h2 id="s08">AI Training Systems</h2>
 		<strong>Closing the Efficiency Gap: AI Datacenter Co-design Roadmap for Scalable Training of LLMs</strong><br />
 		J. Tithi, H. Wu, J. Park, A. Abuhatzera, F. Petrini, T. Krishna<br /><br /> 
@@ -706,9 +783,9 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>SPPO: Making Million-Token LLM Training Practical on Modest GPU Clusters</strong><br />
 		Q. chen, S. Li, W. GAO, P. Sun, Y. Wen, T. Zhang<br /><br /> 
 		<strong>Rudder: Steering Prefetching in Distributed GNN Training using LLM Agents</strong><br />
-		A. Sarkar, S. Ghosh, N. Tallent, A. Chadha, T. Roosta, A. Jannesari<br /><br /> 
+		A. Sarkar, S. Ghosh, N. Tallent, A. Chadha, T. Roosta, A. Jannesari
 	</td>
-	<td>
+	<td class="session">
 		<h2 id="s07">Graph Search &amp; Paths</h2>
 		<strong>G-PathGen: An Efficient GPU-Parallel k-Critical Path Generation Algorithm</strong><br />
 		C. Chang, Y. Chung, C. Chiu, W. Lee, B. Zhang, U. Schlichtmann, I. Lin, X. Yu, T. Huang<br /><br /> 
@@ -717,9 +794,9 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>MPMOS: Massively Parallel Multi-Objective Shortest Paths</strong><br />
 		L. Gold, D. Sidoti, K. Pattipati, O. Khan<br /><br /> 
 		<strong>DistroMatch: Distributed Disjoint Weighted Matchings in Demand-Aware Reconfigurable Optical Datacenters</strong><br />
-		S. Heck, K. Hanauer, S. Schmid<br /><br /> 
+		S. Heck, K. Hanauer, S. Schmid
 	</td>
-	<td>
+	<td class="session">
 		<h2 id="s09">Communication &amp; Collectives</h2>
 		<strong>SHIRO: Near-Optimal Communication Strategies for Distributed Sparse Matrix Multiplication</strong><br />
 		C. Zhuang, L. Zhang, B. Brock, D. Wu, P. Chen, T. Endo, S. Matsuoka, M. Wahib<br /><br /> 
@@ -728,12 +805,24 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>Skew-aware Adaptive All-to-allv Algorithms for Dynamic Deep Learning Workloads</strong><br />
 		C. Wei, A. Bhatele<br /><br /> 
 		<strong>StencilMD: Optimizing Communication in Molecular Dynamics Simulations</strong><br />
-		R. Deng, T. Schardl<br /><br /> 
+		R. Deng, T. Schardl
 	</td>
   </tr>
   <tr>
-  	<td class="time"><h2>13:40- 15:00</h2></td>
-	<td>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Zheng Wang
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Tobias Grosser
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Brian Dandurand
+	</td>
+  </tr>
+  <tr>
+  	<td class="session"><h2>13:40- 15:00</h2></td>
+	<td class="session">
 		<h2 id="s11">LLM Serving</h2>
 		<strong>Taming Dynamic Diffusion LLM Inference through Virtual Static Execution</strong><br />
 		J. Zhu, H. Wu, Y. Li, H. Wang, R. Li, J. Zhai<br /><br /> 
@@ -742,9 +831,9 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>InferFast: Bridging the Gap Between Unstructured LLM Sparsity and Practical GPU Throughput</strong><br />
 		Z. Shen, W. Bu, X. He, K. Sheng, H. Chen<br /><br /> 
 		<strong>dLLM-Serve: Bridging the Memory Gap in Diffusion Language Model Serving</strong><br />
-		J. Fan, Y. Zhang, X. Li, D. Nikolopoulos<br /><br /> 
+		J. Fan, Y. Zhang, X. Li, D. Nikolopoulos
 	</td>
-	<td>
+	<td class="session">
 		<h2 id="s10">Graph Analytics</h2>
 		<strong>DCSM: Enabling Inter-Batch Parallelism for Continuous Subgraph Matching on GPU</strong><br />
 		Y. Wei, P. Jiang<br /><br /> 
@@ -753,9 +842,9 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>GAAF: Fast and Scalable Graph-based Vector Similarity Search with Any-Match Label Filtering</strong><br />
 		M. Ma, X. Yin, J. Qiu<br /><br /> 
 		<strong>HoloGraph: Bridging the Throughput Gap in Heterogeneous Graph Pattern Matching via Workload-Aware Steering</strong><br />
-		M. Haotian, W. Hsu, Y. Chung<br /><br /> 
+		M. Haotian, W. Hsu, Y. Chung
 	</td>
-	<td>
+	<td class="session">
 		<h2 id="s12">Near-Memory Architectures</h2>
 		<strong>DANMP: Accelerating Multi-Scale Deformable Attention Using Near-Memory-Processing Architecture</strong><br />
 		H. Li, Q. Wang, B. Gao, D. Chen, Y. Huang, X. Xin<br /><br /> 
@@ -764,13 +853,25 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>UpDown: Efficient Manycore based on Many Threading and Scalable Memory Parallelism</strong><br />
 		A. Rajasukumar, R. Xu, T. Zhang, Y. Wang, T. Su, M. Nourian, J. Ding, J. Su, R. Khandelwal, A. Fell, D. Gleich, Y. Li, H. Hoffmann, A. Chien<br /><br /> 
 		<strong>Clutch: High Performance Vector-Scalar Comparison using DRAM via Chunked Temporal Coding</strong><br />
-		D. Tokuda, T. Kubo, I. Yuksel, A. Olgun, H. Luo, T. Nagatani, G. De Oliveira Junior, A. Yağlıkçı, M. Sadrosadati, O. Mutlu, S. Takamaeda-Yamazaki<br /><br /> 
+		D. Tokuda, T. Kubo, I. Yuksel, A. Olgun, H. Luo, T. Nagatani, G. De Oliveira Junior, A. Yağlıkçı, M. Sadrosadati, O. Mutlu, S. Takamaeda-Yamazaki
+	</td>
+  </tr>
+  <tr>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Ali Jannesari
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Marco D'Antonio
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Shounak Chakraborty
 	</td>
   </tr>
 
   <tr>
-  	<td class="time"><h2>15:30- 17:10</h2></td>
-	<td>
+  	<td class="session"><h2>15:30- 17:10</h2></td>
+	<td class="session">
 		<h2 id="s14">Data Analytics &amp; Compression</h2>
 		<strong>GPZ: GPU-Accelerated Lossy Compressor for Particle Data</strong><br />
 		R. Li, Y. Huang, L. Zhang, Z. Yang, S. Di, B. Zhang, J. Huang, J. Liu, J. Tian, G. Li, F. Song, H. Guo, F. Cappello, K. Zhao<br /><br /> 
@@ -781,9 +882,9 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>DA-MLAD: Drift-Decomposed Meta-Learning for Continual Log Anomaly Detection in Supercomputing Systems</strong><br /> 
 		K. Tan, Y. Du, D. Zhan, Y. Xie, H. Yu, B. Zhao, H. Liu<br /><br /> 
 		<strong>TADS: Trend-Aware Dynamic Load Balancing for Large-Scale SNN Simulations with Delay-Sharded Graph Infrastructure</strong><br /> 
-		H. Huang, S. Pang, Y. Zeng, G. Feng, Z. Chen, Y. Lu<br /><br /> 
+		H. Huang, S. Pang, Y. Zeng, G. Feng, Z. Chen, Y. Lu
 	</td>
-	<td>
+	<td class="session">
 		<h2 id="s13">Graph Traversal &amp; Connectivity</h2>
 		<strong>cuMIS: A Unified Scalable Framework for Computing Maximal Independent Sets on Trillion-Edge Graphs</strong><br />
 		J. Nke, S. Kang, B. Rees, C. Lee<br /><br /> 
@@ -794,9 +895,9 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>DynLP: Parallel Dynamic Batch Update for Label Propagation in Graph-based Semi-Supervised Learning</strong><br />
 		S. Shovan, A. Khanda, S. Ferdous, S. Das, M. Halappanavar<br /><br /> 
 		<strong>Parametric Mappings for Distributed-Memory Tensor Computations</strong><br /> 
-		B. Wu, M. Kong<br /><br /> 
+		B. Wu, M. Kong
 	</td>
-	<td>
+	<td class="session">
 		<h2 id="s15">CXL &amp; Memory Systems</h2>
 		<strong>CXL-CCL: Inter-Node Collective GPU-Communication Using a CXL Shared Memory Pool</strong><br /> 
 		D. Xu, H. Meng, X. Chen, D. Zhu, W. Tang, F. Liu, L. Xie, W. Xiang, R. Shi, Y. Li, H. Hu, H. Zhang, D. Li, J. Jiang<br /><br /> 
@@ -807,7 +908,19 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>Anchoring Whole-System Persistence and Resilience in CXL</strong><br /> 
 		Y. Zhou, J. Zeng, C. Jung<br /><br /> 
 		<strong>Griffin: Coherency-Aware Task Scheduling and Memory Allocation for CXL Interconnects</strong><br /> 
-		S. Lee, K. Diab, D. Tootaghaj, L. Cao, P. Sharma, A. Gavrilovska<br /><br /> 
+		S. Lee, K. Diab, D. Tootaghaj, L. Cao, P. Sharma, A. Gavrilovska
+	</td>
+  </tr>
+  <tr>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Max Doblas
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Antonino Tumeo
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Abhinav Bhatele
 	</td>
   </tr>
 </tbody>
@@ -825,21 +938,45 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
     <th style="width: 30%"><h2>Minor Hall</h2> </th>
   </tr>
   <tr>
-  	<td class="time"><h2>09:20- 10:20</h2></td>
-	<td>
+  	<td class="session"><h2>08:10- 09:20</h2></td>
+  	<td class="session"><h2 id="s01">Keynote + Best poster/paper awards</h2> 
+	<strong>Keynote:
+	<a style="color:blue" href="../keynote/keynote.html#keynote-3">Destination Earth: Digital twins of the earth system on Europe’s most powerful supercomputers </a>
+	</strong><br />
+	<strong>Dr Ioan Hadade</strong>, Principal Computational Scientist and Team Leader of the HPC Applications team at the European Centre for Medium-Range Weather Forecasts (ECMWF)
+	</td>
+    <td colspan="2" class="session" style="text-align:center;vertical-align:middle"> (No sessions)</td>
+  </tr>
+  <tr>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Bronis de Supinski
+	</td>
+    <td colspan="2" class="session-chair" style="text-align:center;vertical-align:middle"></td>
+  </tr>
+  <tr>
+  	<td class="session"><h2>09:20- 10:20</h2></td>
+	<td class="session">
 		<h2 id="s16">Cross-Layer Performance Optimization</h2>
 		<strong>THAC: Unlocking Performance in Parallel HPC Applications via UQ-Aware Automated Approximation</strong><br /> 
 		Z. Zhao, B. Wang, B. Yang, X. Chen, J. Liu, Q. Wang<br /><br /> 
 		<strong>Cross-Architecture Autotuning for Single-Source Heterogeneous Programming Models</strong><br /> 
 		H. Abram, N. Papadopoulou, J. Domke, M. Pericàs<br /><br /> 
 		<strong>Look Before You Leap : Precision Instruction Supply via SmartScout</strong><br /> 
-		X. Zhang, P. Qu, T. Zhang, F. Su, Z. Pan, Y. Zhang<br /><br /> 
+		X. Zhang, P. Qu, T. Zhang, F. Su, Z. Pan, Y. Zhang
 	</td>
-    <td colspan="2" style="text-align:center;vertical-align:middle"> (No sessions)</td>
+    <td class="session" colspan="2" style="text-align:center;vertical-align:middle"> (No sessions)</td>
   </tr>
   <tr>
-  	<td class="time"><h2>10:50- 12:10</h2></td>
-	<td>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Paul Kelly
+	</td>
+    <td colspan="2" class="session-chair" style="text-align:center;vertical-align:middle"></td>
+  </tr>
+  <tr>
+  	<td class="session"><h2>10:50- 12:10</h2></td>
+	<td class="session">
 		<h2 id="s18">AI Inference</h2>
 		<strong>LayerScope: Predictive Cross-Layer Scheduling for Efficient Multi-Batch MoE Inference on Legacy Servers</strong><br /> 
 		E. Yu, D. Dong, Z. Zhang, Z. Bai, W. Yang, H. Wang, D. Li, Y. Wu, L. Xiangke<br /><br /> 
@@ -848,18 +985,18 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>HOPO: Accelerating Multimodal Neural Networks Inference via Holistic Parallelism Optimization</strong><br /> 
 		Y. Zheng, J. Sun, H. Li, G. Sun, J. Li<br /><br /> 
 		<strong>Latency-SLO-Aware Memory Offloading for Large Language Model Inference</strong><br /> 
-		C. Ma, H. Zhao, Z. Ye, Z. Yang, T. Fu, J. Han, J. Zhang, Y. Luo, X. Wang, Z. Wang, Y. Li, D. Zhou<br /><br /> 
+		C. Ma, H. Zhao, Z. Ye, Z. Yang, T. Fu, J. Han, J. Zhang, Y. Luo, X. Wang, Z. Wang, Y. Li, D. Zhou
 	</td>
-	<td>
+	<td class="session">
 		<h2 id="s17">GPU-Accelerated Query and Geometry</h2>
 		<strong>Parallel Query Processing through Optimal Key Grouping on GPU-Based B+-Trees</strong><br /> 
 		Z. Chen, J. Li, J. Meng, N. Pitaksirianan, Y. Tu, B. Zeng, C. Dong<br /><br /> 
 		<strong>X-HD: Fast Hausdorff Distance Computation with Ray Tracing</strong><br /> 
 		L. Geng, Z. Yuan, R. Lee, X. Zhang, F. Wang<br /><br /> 
 		<strong>Rethinking Collision Detection on GPU Ray Tracing Architecture</strong><br /> 
-		D. Mandarapu, I. Fuksman, A. Pelenitsyn, G. Bernstein, M. Kulkarni<br /><br /> 
+		D. Mandarapu, I. Fuksman, A. Pelenitsyn, G. Bernstein, M. Kulkarni
 	</td>
-	<td>
+	<td class="session">
 		<h2 id="s19">Resilience and Error Detection</h2>
 		<strong>Not All Errors Are Equal: A Systematic Study of Error Propagation in Large Language Model Inference</strong><br /> 
 		Y. Huang, S. Di, G. Li<br /><br /> 
@@ -868,12 +1005,24 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>Harnessing MPI mutations for AI error detection</strong><br /> 
 		A. Auville, T. Jammer, E. Petit, P. Castro, E. Saillard, M. Popov<br /><br /> 
 		<strong>StreamGuard: Low-Overhead Resilience for Real-time HPC Data Streams</strong><br /> 
-		H. Nguyen, B. Nicolae, T. Bicer, A. Gueroudji, M. Dorier, K. Chard, I. Foster<br /><br /> 
+		H. Nguyen, B. Nicolae, T. Bicer, A. Gueroudji, M. Dorier, K. Chard, I. Foster
 	</td>
   </tr>
   <tr>
-  	<td class="time"><h2>13:40- 15:00</h2></td>
-	<td>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Giulia Guidi
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Doru Thom Popovici
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Olga Pearce
+	</td>
+  </tr>
+  <tr>
+  	<td class="session"><h2>13:40- 15:00</h2></td>
+	<td class="session">
 		<h2 id="s21">AI Kernels &amp; Parallelism</h2>
 		<strong>HPMD: Enabling Hybrid Parallelism with Multi-Dimensional Adaptive DNN Training</strong><br /> 
 		G. Yun, Y. Choi<br /><br /> 
@@ -882,18 +1031,18 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>DynSpAttn: Efficient Attention via Dual-Side Dynamic Sparsity on Sparse Tensor Cores</strong><br /> 
 		R. Fan, X. Yu, Z. Li, W. Luo, G. Gong, X. Chu<br /><br /> 
 		<strong>Three Birds, One Stone: Fast, Accurate-aware and Cost-Efficient Accelerator for Ternary LLM</strong><br /> 
-		W. Jung, J. Kang, S. Shin, H. Um, J. Lim, G. Koo, Y. Park, S. Park, T. Suh<br /><br /> 
+		W. Jung, J. Kang, S. Shin, H. Um, J. Lim, G. Koo, Y. Park, S. Park, T. Suh
 	</td>
-	<td>
+	<td class="session">
 		<h2 id="s20">Sparse &amp; Tensor Kernels</h2>
 		<strong>Communication-Avoiding SpGEMM via Trident Partitioning on Hierarchical GPU Interconnect</strong><br /> 
 		J. Bellavita, L. Pichetti, T. Pasquali, F. Vella, G. Guidi<br /><br /> 
 		<strong>Ocean: Fast Estimation-Based Sparse General Matrix-Matrix Multiplication on GPU</strong><br /> 
 		Y. Li, G. Guidi<br /><br /> 
 		<strong>PolyKAN: A High-Performance and Universal GPU Operator Library for Polynomial Kolmogorov-Arnold Networks</strong><br /> 
-		M. Yu, H. Zhong, J. Jiang, D. Huang, Y. Lu<br /><br /> 
+		M. Yu, H. Zhong, J. Jiang, D. Huang, Y. Lu
 	</td>
-	<td>
+	<td class="session">
 		<h2 id="s22">Energy-Aware Systems</h2>
 		<strong>DEFT: Joint Task Placement and DVFS for Energy-Efficient Multi-GPU Runtimes</strong><br /> 
 		J. Chen, M. Pericàs<br /><br /> 
@@ -902,12 +1051,24 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>Exploiting Hybrid Energy Storage to Minimize the Carbon Footprint of AI Data Centers</strong><br /> 
 		S. Wu, X. Wang<br /><br /> 
 		<strong>The Performance-Power Frontier: A Model-Driven Approach to Energy-Aware Application Optimisation</strong><br /> 
-		S. Pasupuleti, S. Wright<br /><br /> 
+		S. Pasupuleti, S. Wright
 	</td>
   </tr>
   <tr>
-  	<td class="time"><h2>15:30- 17:10</h2></td>
-	<td>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Taeweon Suh
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Doru Thom Popovici
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Maxime Gonthier
+	</td>
+  </tr>
+  <tr>
+  	<td class="session"><h2>15:30- 17:10</h2></td>
+  	<td class="session">
 		<h2 id="s24">Efficient Privacy Computing</h2>
 		<strong>MegaZK: A Memory Efficient GPU System Accelerating End-to-end Zero-Knowledge Proof</strong><br /> 
 		M. Li, Y. Yu, B. Wang, X. Fan, M. Gao, S. Deng<br /><br /> 
@@ -918,9 +1079,9 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>Scaling Long-Sequence Homomorphic Encrypted Transformer Inference via Hybrid Parallelism on Multi-GPU Systems</strong><br /> 
 		Z. Gong, R. Ran, F. Yao, W. Wen<br /><br /> 
 		<strong>CipherSkip: Efficient Sparse Matrix Multiplication with FHE</strong><br /> 
-		W. Xiong, H. Zhou, Y. Ye, R. Jin, L. Xu<br /><br /> 
+		W. Xiong, H. Zhou, Y. Ye, R. Jin, L. Xu
 	</td>
-	<td>
+  	<td class="session">
 		<h2 id="s23">Numerical &amp; Scientific Kernels</h2>
 		<strong>WindStencil: Unleashing GPU Potential for High-Order Stencil Computation in High-Performance Inviscid CFD Simulations</strong><br /> 
 		X. Zhang, H. Zhang, X. Liu, J. Li, R. Jin, J. Zhang, W. Yuan, S. Liang, Z. Lu<br /><br /> 
@@ -931,9 +1092,9 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>Non-Delayed Cholesky Factorization</strong><br /> 
 		Y. Luo, S. Zhang, W. Liu<br /><br /> 
 		<strong>Parallel Quadratic Selected Inversion in Quantum Transport Simulation</strong><br /> 
-		V. Maillou, M. Bollhofer, O. Schenk, A. Ziogas, M. Luisier<br /><br /> 
+		V. Maillou, M. Bollhofer, O. Schenk, A. Ziogas, M. Luisier
 	</td>
-	<td>
+  	<td class="session">
 		<h2 id="s25">Quantum Computing</h2>
 		<strong>quEStab: Towards Scalable Quantum Circuit Simulation on Multi-GPU using an Extended Stabilizer Formalism</strong><br /> 
 		H. Shin, S. Lee, Y. Kim<br /><br /> 
@@ -944,7 +1105,19 @@ Workshop session locations are currently denoted Room [1-6] and will be specifie
 		<strong>C-3PQ: A Closeness Centrality-based Circuit Partitioner for Quantum Simulations</strong><br /> 
 		D. Popovici, H. Lee, N. Yoshioka, M. Ben, N. Ito, K. Klymko, D. Camps, A. Butko<br /><br /> 
 		<strong>Diagonal-Budgeted Trotterization for Efficient Quantum Hamiltonian Simulation</strong><br /> 
-		S. Chundury, B. Burgstahler, J. Li, I. Suh, F. Mueller<br /><br /> 
+		S. Chundury, B. Burgstahler, J. Li, I. Suh, F. Mueller
+	</td>
+  </tr>
+  <tr>
+  	<td class="session-chair"></td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: 
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: Giulia Guidi
+	</td>
+  	<td class="session-chair">
+		<strong>Session Chair</strong>: 
 	</td>
   </tr>
 </tbody>
