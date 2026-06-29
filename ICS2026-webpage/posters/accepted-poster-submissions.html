@@ -330,19 +330,7 @@ permits.</p>
 
 <hr />
 
-<h2 id="6-beyond-bfs-a-comparative-study-of-rooted-spanning-tree-algorithms-on-gpus">6. Beyond BFS: A Comparative Study of Rooted Spanning Tree Algorithms on GPUs</h2>
-
-<p><strong>Author(s):</strong> Srikar Donur; Abhijeet Sahu, Indian Institute of Technology Tirupati; Dr. Subhajit Sahu, SRM University-AP Andhra Pradesh</p>
-
-<p><strong>Abstract:</strong> Rooted spanning trees (RSTs) are a core primitive in parallel graph analytics, underpinning algorithms such as biconnected components and planarity testing. On GPUs, RST construction has traditionally relied on breadth-first search (BFS) due to its simplicity and work efficiency. However, BFS incurs an O(D) step complexity, which severely limits parallelism on high-diameter and power-law graphs. We present a comparative study of alternative RST construction strategies on modern GPUs. We introduce a GPU adaptation of the Path-Reversal RST (PR-RST) algorithm, optimizing its pointer-jumping and broadcast operations for modern GPU architecture. In addition, we evaluate an integrated approach that combines connectivity framework (GConn) with Eulerian tour–based rooting.</p>
-
-<p>Across more than 10 real-world graphs, our results show that the GConn-based approach achieves up to 300x speedup over optimized BFS on high-diameter graphs. These findings indicate that the O(log n) step complexity of connectivity-based methods can outweigh their structural overhead on modern hardware, motivating a rethinking of RST construction in GPU graph analytics.</p>
-
-<p>A separate challenge emerges from scale: all prior approaches assume that the input graph fits entirely within accelerator memory, an assumption that fails for real-world graphs that routinely exceed typical GPU memory capacities of 16–24 GB. We address this gap by extending the GConn-based RST approach to the out-of-memory setting, constructing the rooted spanning tree using only O(n) auxiliary space, thereby enabling RST computation on graphs that far exceed GPU memory capacity.</p>
-
-<hr />
-
-<h2 id="7-taagent-bridging-the-intent-execution-gap-in-heterogeneous-medical-ai-clusters-with-llm-driven-orchestration">7. TAAgent: Bridging the Intent-Execution Gap in Heterogeneous Medical AI Clusters with LLM-Driven Orchestration</h2>
+<h2 id="6-taagent-bridging-the-intent-execution-gap-in-heterogeneous-medical-ai-clusters-with-llm-driven-orchestration">6. TAAgent: Bridging the Intent-Execution Gap in Heterogeneous Medical AI Clusters with LLM-Driven Orchestration</h2>
 
 <p><strong>Author(s):</strong> Yan Wang</p>
 
@@ -350,28 +338,7 @@ permits.</p>
 
 <hr />
 
-<h2 id="8-gpu-algorithms-for-biconnected-components-on-large-graphs">8. GPU Algorithms for Biconnected Components on Large Graphs</h2>
-
-<p><strong>Author(s):</strong> Abhijeet Sahu; Srikar Donur and Indian Institute of Technology Tirupati; Dr, G Ramakrishna and Indian Institute of Technology Tirupati</p>
-
-<p><strong>Abstract:</strong> Efficient algorithms for graph biconnectivity are critical across diverse domains, including medical diagnostics and chip design. Recent work has explored accelerator-based approaches to handle large-scale graphs by leveraging parallelism. However, these methods are fundamentally limited by device memory capacity, rendering them ineffective in the Out-of-Memory (OOM) setting. This challenge necessitates a rethinking of both algorithm design and implementation.</p>
-
-<p>In this work, we introduce a novel parallel edge-pruning technique that significantly reduces the memory footprint of biconnected component (BCC) decomposition. Unlike prior approaches that depend on constructing a computationally expensive BFS tree, we prove that certain non-tree edges with respect to an arbitrary spanning tree can be safely pruned without affecting biconnectivity. This insight enables the construction of an efficient O(n)-size skeleton while avoiding BFS overhead.</p>
-
-<p>Building on this foundation, we propose two GPU-based parallel algorithms: FAST-BCC-FILTER for in-memory computation and PEA-BCC for the out-of-core setting. We evaluate our methods on 30 real-world datasets. For graphs that exceed device memory, our approach achieves an average speedup of 2.7x over the best CPU baseline. For graphs that fit in memory, we achieve a 71x average speedup over the state-of-the-art GPU baseline.</p>
-
-<hr />
-
-<h2 id="9-heterogeneous-computing-workflow-accelerates-end-to-end-medical-image-ai-training">9. Heterogeneous Computing Workflow Accelerates End-to-end Medical Image AI Training</h2>
-
-<p><strong>Author(s):</strong> Meilin Quan; Wenjin Yu, Shanghai United Imaging Healthcare Advanced Technology Research Institute Co., Ltd., Shanghai, China</p>
-
-<p><strong>Abstract:</strong> Medical image preprocessing is often a prerequisite for downstream model training and can become a major determinant of overall development efficiency. However, as dataset size increases, preprocessing frequently becomes the dominant bottleneck of the end-to-end pipeline, and its execution time often exceeds that of model training itself. Existing medical image frameworks, such as nnUNet and MONAI, provide preprocessing modules and support multi-process execution, but they do not support distributed preprocessing across different nodes. Moreover, even if such preprocessing can be achieved, overall efficiency cannot be fully improved without an integrated end-to-end workflow that seamlessly links distributed preprocessing and model training.
-To address this gap, we propose an integrated end-to-end workflow for medical image AI development, in which distributed CPU nodes perform parallel medical image preprocessing and continuously supply processed data to a GPU server for model training. On a real pathologically confirmed pancreatic ductal adenocarcinoma CTA dataset comprising 334,039 CT slices, the proposed workflow reduced preprocessing time from 923.5 s to 18 s (51.3× speedup)and shortened end-to-end training time from 20.8 h to 8.9 h (2.33× speedup). Moreover, these efficiency gains did not come at the cost of downstream task effectiveness, as test Dice/IoU improved from 0.64/0.50 to 0.67/0.54. These results show that our framework effectively improve preprocessing efficency as a major pipeline bottleneck and provides a practical integrated paradigm for efficient large-scale medical image AI development.</p>
-
-<hr />
-
-<h2 id="10-tain-a-tensor-aware-high-performance-framework-for-quantum-chemistry-on-heterogeneous-architectures">10. TAIN: A Tensor-Aware High-Performance Framework for Quantum Chemistry on Heterogeneous Architectures</h2>
+<h2 id="7-tain-a-tensor-aware-high-performance-framework-for-quantum-chemistry-on-heterogeneous-architectures">7. TAIN: A Tensor-Aware High-Performance Framework for Quantum Chemistry on Heterogeneous Architectures</h2>
 
 <p><strong>Author(s):</strong> Wenhao Liang; Yingjin Ma Computer Network Information Center, Chinese Academy of Sciences
 Zhong Jin Computer Network Information Center, Chinese Academy of Sciences</p>
@@ -380,7 +347,7 @@ Zhong Jin Computer Network Information Center, Chinese Academy of Sciences</p>
 
 <hr />
 
-<h2 id="11-harnessing-mpi-mutations-for-ai-error-detection">11. Harnessing MPI mutations for AI error detection</h2>
+<h2 id="8-harnessing-mpi-mutations-for-ai-error-detection">8. Harnessing MPI mutations for AI error detection</h2>
 
 <p><strong>Author(s):</strong> Asia AUVILLE; Tim Jammer (Technische Universität Darmstadt), Eric Petit (Intel), Pablo de Oliveira Castro (University of Versailles), Emmanuelle Saillard (Inria), Mihail Popov (Inria)</p>
 
@@ -391,7 +358,7 @@ Zhong Jin Computer Network Information Center, Chinese Academy of Sciences</p>
 
 <hr />
 
-<h2 id="12-quantum-powered-computational-multiphysics-and-multiscale-modeling-and-simulation">12. Quantum-Powered Computational Multiphysics and Multiscale Modeling and Simulation</h2>
+<h2 id="9-quantum-powered-computational-multiphysics-and-multiscale-modeling-and-simulation">9. Quantum-Powered Computational Multiphysics and Multiscale Modeling and Simulation</h2>
 
 <p><strong>Author(s):</strong> Mohamed Labadi; Samir Abdelmalek (University of Chlef and National Higher School for Nanosciences and Nanotechnologies, Algeria), Abdelkader Krimi (Ecole Polytechnique de Montreal - University of Montreal, Canada)</p>
 
@@ -399,7 +366,7 @@ Zhong Jin Computer Network Information Center, Chinese Academy of Sciences</p>
 
 <hr />
 
-<h2 id="13-deserthpc-toward-net-zero-supercomputing-through-saharan-renewable-energy-and-advanced-cooling-architectures">13. DesertHPC: Toward Net-Zero Supercomputing Through Saharan Renewable Energy and Advanced Cooling Architectures</h2>
+<h2 id="10-deserthpc-toward-net-zero-supercomputing-through-saharan-renewable-energy-and-advanced-cooling-architectures">10. DesertHPC: Toward Net-Zero Supercomputing Through Saharan Renewable Energy and Advanced Cooling Architectures</h2>
 
 <p><strong>Author(s):</strong> Mohamed Labadi; Samir Abdelmalek, University of Chlef and National Higher School for Nanosciences and Nanotechnologies (Algeria)</p>
 
@@ -410,7 +377,7 @@ By repositioning underutilized desert regions as strategic assets for sustainabl
 
 <hr />
 
-<h2 id="14-hpc-enabled-evaluation-of-sars-cov-2-vaccine-responses-across-platforms-variants-and-hiv-status-in-african-cohorts">14. HPC-Enabled Evaluation of SARS-CoV-2 Vaccine Responses Across Platforms, Variants, and HIV Status in African Cohorts</h2>
+<h2 id="11-hpc-enabled-evaluation-of-sars-cov-2-vaccine-responses-across-platforms-variants-and-hiv-status-in-african-cohorts">11. HPC-Enabled Evaluation of SARS-CoV-2 Vaccine Responses Across Platforms, Variants, and HIV Status in African Cohorts</h2>
 
 <p><strong>Author(s):</strong> Shannon Ramkistan; Afrah Khairallah<sup>1,2</sup>; Shannon Ramkistan<sup>1</sup>; Kaelo Seatla<sup>3</sup>; Jumari Snyman<sup>1,2,9</sup>; Victoria Kasprowicz<sup>1</sup>; Alex Sigal<sup>1,4</sup>; Modisa Motswaledi<sup>5</sup>; Simani Gaseitsiwe<sup>3,6</sup>; Mosepele Mosepele<sup>3,7</sup>; Sikhulile Moyo<sup>3,6,8,9</sup>; Thumbi Ndung’u<sup>1,2,9,10,11</sup>;</p>
 
@@ -433,7 +400,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="15-wave-based-dispatch-for-circuit-cutting-in-hybrid-hpcquantum-systems">15. Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</h2>
+<h2 id="12-wave-based-dispatch-for-circuit-cutting-in-hybrid-hpcquantum-systems">12. Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</h2>
 
 <p><strong>Author(s):</strong> Ricard Santiago Raigada García; Sergio Iserte Agut, Barcelona Supercomputing Center (BSC)</p>
 
@@ -441,7 +408,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="16-context-sensitive-floating-point-round-off-error-analysis">16. Context-sensitive Floating-point Round-off Error Analysis</h2>
+<h2 id="13-context-sensitive-floating-point-round-off-error-analysis">13. Context-sensitive Floating-point Round-off Error Analysis</h2>
 
 <p><strong>Author(s):</strong> Charlie Joseph Keaney; Hans Vandierendonck, Queen’s University Belfast</p>
 
@@ -449,7 +416,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="17-faster-biobank-scale-genomics-through-sparse-linear-algebra-on-genotype-representation-graph">17. Faster Biobank-Scale Genomics through Sparse Linear Algebra on Genotype Representation Graph</h2>
+<h2 id="14-faster-biobank-scale-genomics-through-sparse-linear-algebra-on-genotype-representation-graph">14. Faster Biobank-Scale Genomics through Sparse Linear Algebra on Genotype Representation Graph</h2>
 
 <p><strong>Author(s):</strong> Yifan Li; Yifan Li, Qingyao Sun, Drew DeHaas, April Wei, Giulia Guidi (Cornell University)</p>
 
@@ -461,7 +428,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="18-hpc-enabled-identification-of-host-proteins-associated-with-strong-sars-cov-2-neutralising-antibody-responses">18. HPC-enabled identification of host proteins associated with strong SARS-CoV-2 neutralising antibody responses</h2>
+<h2 id="15-hpc-enabled-identification-of-host-proteins-associated-with-strong-sars-cov-2-neutralising-antibody-responses">15. HPC-enabled identification of host proteins associated with strong SARS-CoV-2 neutralising antibody responses</h2>
 
 <p><strong>Author(s):</strong> Afrah Khairallah<sup>1</sup>, Zesuliwe Jule<sup>1</sup>, Alice Piller<sup>1</sup>, Mallory Bernstein<sup>1</sup>, Kajal Reedoy<sup>1</sup>, Yashica Ganga<sup>1</sup>, Sashkia R. Balla<sup>2</sup>, Prudence Kgagudi<sup>2</sup>, Bernadett I. Gosnell<sup>3</sup>, Farina Karim<sup>1</sup>, Yunus Moosa<sup>3</sup>, Thumbi Ndung’u<sup>1,4,5,6</sup>, Thandeka Moyo-Gwete<sup>2,7</sup>, Penny L. Moore<sup>2,7</sup>, Khadija Khan<sup>1</sup>, Alex Sigal<sup>1,8</sup></p>
 
@@ -478,7 +445,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="19-a-robust-examination-of-the-impacts-of-asynchronous-estimation-on-the-outcomes-of-molecular-dynamics-simulations">19. A Robust Examination of the Impacts of Asynchronous Estimation on the Outcomes of Molecular Dynamics Simulations</h2>
+<h2 id="16-a-robust-examination-of-the-impacts-of-asynchronous-estimation-on-the-outcomes-of-molecular-dynamics-simulations">16. A Robust Examination of the Impacts of Asynchronous Estimation on the Outcomes of Molecular Dynamics Simulations</h2>
 
 <p><strong>Author(s):</strong> David Seaman; Prof. Hans Vandierendonck (QUB), Prof. Bronis de Supinski (QUB), Dr. Brian Dandurand (QUB)</p>
 
@@ -486,7 +453,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="20-the-risc-v-vecr-extension-adding-internal-registers-to-rvv">20. The RISC-V VecR extension: Adding Internal Registers to RVV</h2>
+<h2 id="17-the-risc-v-vecr-extension-adding-internal-registers-to-rvv">17. The RISC-V VecR extension: Adding Internal Registers to RVV</h2>
 
 <p><strong>Author(s):</strong> Mariusz Szczepaniak; Syed Waqar Nabi, University of Glasgow, Nikela Papadopoulou, University of Glasgow</p>
 
