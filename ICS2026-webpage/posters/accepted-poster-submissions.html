@@ -338,18 +338,9 @@ permits.</p>
 
 <hr />
 
-<h2 id="7-tain-a-tensor-aware-high-performance-framework-for-quantum-chemistry-on-heterogeneous-architectures">7. TAIN: A Tensor-Aware High-Performance Framework for Quantum Chemistry on Heterogeneous Architectures</h2>
+<h2 id="7-harnessing-mpi-mutations-for-ai-error-detection">7. Harnessing MPI mutations for AI error detection</h2>
 
-<p><strong>Author(s):</strong> Wenhao Liang; Yingjin Ma Computer Network Information Center, Chinese Academy of Sciences
-Zhong Jin Computer Network Information Center, Chinese Academy of Sciences</p>
-
-<p><strong>Abstract:</strong> Accurately computing dynamic correlation energy (DCE) is essential for describing the electronic behavior and related properties of strongly correlated systems in quantum chemistry. However, DCE calculations require extensive tensor contractions that dominate the overall computational cost and form the primary performance bottleneck. These tensor-intensive workloads would, in principle, benefit from the high throughput provided by the lowprecision tensor units in modern heterogeneous architectures. Yet DCE workloads do not align well with these hardware capabilities. This mismatch arises from three key challenges: 1) strict precision requirements, 2) irregular workloads, and 3) limited scalability. To address these challenges, we propose TAIN, a tensor-based optimization framework for DCE computing. TAIN employs an orbital-aware tensor compression algorithm to identify that over 80% of tensor contractions have negligible impact on the final energy and reduces their cost through low rank approximation, while low precision quantization techniques effectively exploit GPU tensor units without compromising accuracy. For irregular workloads, TAIN introduces a heterogeneity-aware scheduling strategy that retains communication-bound tensors on CPUs and batches other tensor contractions on GPUs. TAIN further reduces redundant work through pruning and pipelined execution, and achieves load balancing through a decoupled task–load partitioning strategy. Experimental results show that TAIN achieves up to 36.7× speedup over the state-of-the-art library on a single node. TAIN reaches 97% strong and 93% weak scaling on 4,000 nodes of the ORISE supercomputer, reducing the time-to-solution for the bioluminescence system from days to a single hour. These results suggest that TAIN provides a practical reference for accelerating tensor-intensive scientific workloads on modern heterogeneous architectures.</p>
-
-<hr />
-
-<h2 id="8-harnessing-mpi-mutations-for-ai-error-detection">8. Harnessing MPI mutations for AI error detection</h2>
-
-<p><strong>Author(s):</strong> Asia AUVILLE; Tim Jammer (Technische Universität Darmstadt), Eric Petit (Intel), Pablo de Oliveira Castro (University of Versailles), Emmanuelle Saillard (Inria), Mihail Popov (Inria)</p>
+<p><strong>Author(s):</strong> Asia Auville; Tim Jammer (Technische Universität Darmstadt), Eric Petit (Intel), Pablo de Oliveira Castro (University of Versailles), Emmanuelle Saillard (Inria), Mihail Popov (Inria)</p>
 
 <p><strong>Abstract:</strong> MPI errors are challenging to identify despite the significant number of expert verification tools. Dynamic tools (i.e., requiring profiling) are computationally expensive and accurate in error detection, whereas static analysis (i.e., operating at source code or compilation) is computationally cheap but less accurate. Interestingly, the recent success of AI and LLMs offers an alternative to increase static analysis accuracy while preserving its low overhead. Yet current methods remain difficult to benchmark, too general, and poorly adapted to the specific challenges of high-performance computing.</p>
 
@@ -358,7 +349,7 @@ Zhong Jin Computer Network Information Center, Chinese Academy of Sciences</p>
 
 <hr />
 
-<h2 id="9-quantum-powered-computational-multiphysics-and-multiscale-modeling-and-simulation">9. Quantum-Powered Computational Multiphysics and Multiscale Modeling and Simulation</h2>
+<h2 id="8-quantum-powered-computational-multiphysics-and-multiscale-modeling-and-simulation">8. Quantum-Powered Computational Multiphysics and Multiscale Modeling and Simulation</h2>
 
 <p><strong>Author(s):</strong> Mohamed Labadi; Samir Abdelmalek (University of Chlef and National Higher School for Nanosciences and Nanotechnologies, Algeria), Abdelkader Krimi (Ecole Polytechnique de Montreal - University of Montreal, Canada)</p>
 
@@ -366,7 +357,7 @@ Zhong Jin Computer Network Information Center, Chinese Academy of Sciences</p>
 
 <hr />
 
-<h2 id="10-deserthpc-toward-net-zero-supercomputing-through-saharan-renewable-energy-and-advanced-cooling-architectures">10. DesertHPC: Toward Net-Zero Supercomputing Through Saharan Renewable Energy and Advanced Cooling Architectures</h2>
+<h2 id="9-deserthpc-toward-net-zero-supercomputing-through-saharan-renewable-energy-and-advanced-cooling-architectures">9. DesertHPC: Toward Net-Zero Supercomputing Through Saharan Renewable Energy and Advanced Cooling Architectures</h2>
 
 <p><strong>Author(s):</strong> Mohamed Labadi; Samir Abdelmalek, University of Chlef and National Higher School for Nanosciences and Nanotechnologies (Algeria)</p>
 
@@ -377,7 +368,7 @@ By repositioning underutilized desert regions as strategic assets for sustainabl
 
 <hr />
 
-<h2 id="11-hpc-enabled-evaluation-of-sars-cov-2-vaccine-responses-across-platforms-variants-and-hiv-status-in-african-cohorts">11. HPC-Enabled Evaluation of SARS-CoV-2 Vaccine Responses Across Platforms, Variants, and HIV Status in African Cohorts</h2>
+<h2 id="10-hpc-enabled-evaluation-of-sars-cov-2-vaccine-responses-across-platforms-variants-and-hiv-status-in-african-cohorts">10. HPC-Enabled Evaluation of SARS-CoV-2 Vaccine Responses Across Platforms, Variants, and HIV Status in African Cohorts</h2>
 
 <p><strong>Author(s):</strong> Shannon Ramkistan; Afrah Khairallah<sup>1,2</sup>; Shannon Ramkistan<sup>1</sup>; Kaelo Seatla<sup>3</sup>; Jumari Snyman<sup>1,2,9</sup>; Victoria Kasprowicz<sup>1</sup>; Alex Sigal<sup>1,4</sup>; Modisa Motswaledi<sup>5</sup>; Simani Gaseitsiwe<sup>3,6</sup>; Mosepele Mosepele<sup>3,7</sup>; Sikhulile Moyo<sup>3,6,8,9</sup>; Thumbi Ndung’u<sup>1,2,9,10,11</sup>;</p>
 
@@ -400,7 +391,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="12-wave-based-dispatch-for-circuit-cutting-in-hybrid-hpcquantum-systems">12. Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</h2>
+<h2 id="11-wave-based-dispatch-for-circuit-cutting-in-hybrid-hpcquantum-systems">11. Wave-Based Dispatch for Circuit Cutting in Hybrid HPC–Quantum Systems</h2>
 
 <p><strong>Author(s):</strong> Ricard Santiago Raigada García; Sergio Iserte Agut, Barcelona Supercomputing Center (BSC)</p>
 
@@ -408,7 +399,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="13-context-sensitive-floating-point-round-off-error-analysis">13. Context-sensitive Floating-point Round-off Error Analysis</h2>
+<h2 id="12-context-sensitive-floating-point-round-off-error-analysis">12. Context-sensitive Floating-point Round-off Error Analysis</h2>
 
 <p><strong>Author(s):</strong> Charlie Joseph Keaney; Hans Vandierendonck, Queen’s University Belfast</p>
 
@@ -416,7 +407,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="14-faster-biobank-scale-genomics-through-sparse-linear-algebra-on-genotype-representation-graph">14. Faster Biobank-Scale Genomics through Sparse Linear Algebra on Genotype Representation Graph</h2>
+<h2 id="13-faster-biobank-scale-genomics-through-sparse-linear-algebra-on-genotype-representation-graph">13. Faster Biobank-Scale Genomics through Sparse Linear Algebra on Genotype Representation Graph</h2>
 
 <p><strong>Author(s):</strong> Yifan Li; Yifan Li, Qingyao Sun, Drew DeHaas, April Wei, Giulia Guidi (Cornell University)</p>
 
@@ -428,7 +419,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="15-hpc-enabled-identification-of-host-proteins-associated-with-strong-sars-cov-2-neutralising-antibody-responses">15. HPC-enabled identification of host proteins associated with strong SARS-CoV-2 neutralising antibody responses</h2>
+<h2 id="14-hpc-enabled-identification-of-host-proteins-associated-with-strong-sars-cov-2-neutralising-antibody-responses">14. HPC-enabled identification of host proteins associated with strong SARS-CoV-2 neutralising antibody responses</h2>
 
 <p><strong>Author(s):</strong> Afrah Khairallah<sup>1</sup>, Zesuliwe Jule<sup>1</sup>, Alice Piller<sup>1</sup>, Mallory Bernstein<sup>1</sup>, Kajal Reedoy<sup>1</sup>, Yashica Ganga<sup>1</sup>, Sashkia R. Balla<sup>2</sup>, Prudence Kgagudi<sup>2</sup>, Bernadett I. Gosnell<sup>3</sup>, Farina Karim<sup>1</sup>, Yunus Moosa<sup>3</sup>, Thumbi Ndung’u<sup>1,4,5,6</sup>, Thandeka Moyo-Gwete<sup>2,7</sup>, Penny L. Moore<sup>2,7</sup>, Khadija Khan<sup>1</sup>, Alex Sigal<sup>1,8</sup></p>
 
@@ -445,7 +436,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="16-a-robust-examination-of-the-impacts-of-asynchronous-estimation-on-the-outcomes-of-molecular-dynamics-simulations">16. A Robust Examination of the Impacts of Asynchronous Estimation on the Outcomes of Molecular Dynamics Simulations</h2>
+<h2 id="15-a-robust-examination-of-the-impacts-of-asynchronous-estimation-on-the-outcomes-of-molecular-dynamics-simulations">15. A Robust Examination of the Impacts of Asynchronous Estimation on the Outcomes of Molecular Dynamics Simulations</h2>
 
 <p><strong>Author(s):</strong> David Seaman; Prof. Hans Vandierendonck (QUB), Prof. Bronis de Supinski (QUB), Dr. Brian Dandurand (QUB)</p>
 
@@ -453,7 +444,7 @@ These findings underscore platform-specific trade-offs between peak immunogenici
 
 <hr />
 
-<h2 id="17-the-risc-v-vecr-extension-adding-internal-registers-to-rvv">17. The RISC-V VecR extension: Adding Internal Registers to RVV</h2>
+<h2 id="16-the-risc-v-vecr-extension-adding-internal-registers-to-rvv">16. The RISC-V VecR extension: Adding Internal Registers to RVV</h2>
 
 <p><strong>Author(s):</strong> Mariusz Szczepaniak; Syed Waqar Nabi, University of Glasgow, Nikela Papadopoulou, University of Glasgow</p>
 
